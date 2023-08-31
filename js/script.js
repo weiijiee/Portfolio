@@ -68,7 +68,7 @@ $(function() {
         $(e).css("top", height_gallery_item * Math.floor(i / 3));
     })
 
-    $("#gallery").css("height", height_gallery_item * 2);
+    $("#gallery").css("height", height_gallery_item * 5);
 
     $("#filters .filter-etitle").on("click", function() {
         var width_gallery_item = $("#gallery .gallery-item").outerWidth(true);
@@ -82,39 +82,48 @@ $(function() {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
-            $("#gallery").css("height", height_gallery_item * 2);
+            $("#gallery").css("height", height_gallery_item * 5);
         } else if (filter_index == 1) {
-            $.each($("#gallery .gallery-item:not(.illustration)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".illustration").addClass("show").removeClass("hide");
+            $.each($("#gallery .gallery-item:not(.marketing)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".marketing").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.illustration"), function(i, e) {
+            $.each($("#gallery .gallery-item.marketing"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
             $("#gallery").css("height", height_gallery_item * 1);
         } else if (filter_index == 2) {
-            $.each($("#gallery .gallery-item:not(.mobile)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".mobile").addClass("show").removeClass("hide");
+            $.each($("#gallery .gallery-item:not(.advertisement)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".advertisement").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.mobile"), function(i, e) {
+            $.each($("#gallery .gallery-item.advertisement"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
             $("#gallery").css("height", height_gallery_item * 1);
         } else if (filter_index == 3) {
-            $.each($("#gallery .gallery-item:not(.photography)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".photography").addClass("show").removeClass("hide");
+            $.each($("#gallery .gallery-item:not(.supplies)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".supplies").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.photography"), function(i, e) {
+            $.each($("#gallery .gallery-item.supplies"), function(i, e) {
+                $(e).css("left", width_gallery_item * (i % 3));
+                $(e).css("top", height_gallery_item * Math.floor(i / 3));
+            })
+            $("#gallery").css("height", height_gallery_item * 2);
+        } else if (filter_index == 4) {
+            $.each($("#gallery .gallery-item:not(.accessories)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".accessories").addClass("show").removeClass("hide");
+            })
+            $.each($("#gallery .gallery-item.accessories"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
             $("#gallery").css("height", height_gallery_item * 1);
-        } else if (filter_index == 4) {
-            $.each($("#gallery .gallery-item:not(.website)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".website").addClass("show").removeClass("hide");
+        } else if (filter_index == 5) {
+            $.each($("#gallery .gallery-item:not(.food)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".food").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.website"), function(i, e) {
+            $.each($("#gallery .gallery-item.food"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
@@ -131,7 +140,7 @@ $(function() {
             $(e).css("top", height_gallery_item * Math.floor(i / 3));
         })
 
-        $("#gallery").css("height", height_gallery_item * 2);
+        $("#gallery").css("height", height_gallery_item * 5);
 
         if (filter_index == 0) {
             $.each($("#gallery .gallery-item"), function(i, e) {
@@ -139,39 +148,48 @@ $(function() {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
-            $("#gallery").css("height", height_gallery_item * 2);
+            $("#gallery").css("height", height_gallery_item * 5);
         } else if (filter_index == 1) {
-            $.each($("#gallery .gallery-item:not(.illustration)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".illustration").addClass("show").removeClass("hide");
+            $.each($("#gallery .gallery-item:not(.marketing)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".marketing").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.illustration"), function(i, e) {
+            $.each($("#gallery .gallery-item.marketing"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
             $("#gallery").css("height", height_gallery_item * 1);
         } else if (filter_index == 2) {
-            $.each($("#gallery .gallery-item:not(.mobile)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".mobile").addClass("show").removeClass("hide");
+            $.each($("#gallery .gallery-item:not(.advertisement)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".advertisement").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.mobile"), function(i, e) {
+            $.each($("#gallery .gallery-item.advertisement"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
             $("#gallery").css("height", height_gallery_item * 1);
         } else if (filter_index == 3) {
-            $.each($("#gallery .gallery-item:not(.photography)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".photography").addClass("show").removeClass("hide");
+            $.each($("#gallery .gallery-item:not(.supplies)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".supplies").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.photography"), function(i, e) {
+            $.each($("#gallery .gallery-item.supplies"), function(i, e) {
+                $(e).css("left", width_gallery_item * (i % 3));
+                $(e).css("top", height_gallery_item * Math.floor(i / 3));
+            })
+            $("#gallery").css("height", height_gallery_item * 2);
+        } else if (filter_index == 4) {
+            $.each($("#gallery .gallery-item:not(.accessories)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".accessories").addClass("show").removeClass("hide");
+            })
+            $.each($("#gallery .gallery-item.accessories"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
             $("#gallery").css("height", height_gallery_item * 1);
-        } else if (filter_index == 4) {
-            $.each($("#gallery .gallery-item:not(.website)"), function(i, e) {
-                $(e).addClass("hide").removeClass("show").siblings(".website").addClass("show").removeClass("hide");
+        } else if (filter_index == 5) {
+            $.each($("#gallery .gallery-item:not(.food)"), function(i, e) {
+                $(e).addClass("hide").removeClass("show").siblings(".food").addClass("show").removeClass("hide");
             })
-            $.each($("#gallery .gallery-item.website"), function(i, e) {
+            $.each($("#gallery .gallery-item.food"), function(i, e) {
                 $(e).css("left", width_gallery_item * (i % 3));
                 $(e).css("top", height_gallery_item * Math.floor(i / 3));
             })
